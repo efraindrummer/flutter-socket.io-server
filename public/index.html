@@ -21,9 +21,9 @@
 
         socket.emit('mensaje', { nombre: 'Efrain'});
 
-        socket.on('mensaje', function(payload){
+        socket.on('nuevo-mensaje', function(payload){
             console.log('Escuchando: ', payload);
-        })
+        });
 
     </script>
 </body>
